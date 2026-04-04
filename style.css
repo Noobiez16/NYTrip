@@ -61,6 +61,7 @@ a {
 .gradient-text {
     background: linear-gradient(135deg, #f5b927, #ffecd2);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
@@ -450,6 +451,27 @@ a {
 /* Premium Card specific tweak */
 .premium-card {
     border-top: 2px solid rgba(245, 185, 39, 0.3);
+}
+
+.sub-section {
+    text-align: center;
+    margin: 6rem 0 3rem;
+}
+
+.sub-section-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.hispanic-card {
+    border-top: 2px solid #ff4d4d; /* Passion Red accent */
+}
+
+.hispanic-card .badge.night {
+    background: rgba(255, 77, 77, 0.15);
+    color: #ff4d4d;
+    border-color: rgba(255, 77, 77, 0.3);
 }
 
 /* ==================================
