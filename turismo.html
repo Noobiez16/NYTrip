@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC '26 | 20 Lugares Imperdibles</title>
+    <meta name="description"
+        content="Una guía premium y estética para tu viaje a Nueva York del 24 al 27 de Abril. 20 lugares imperdibles de turismo y gastronomía.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NYC<span class="accent">.</span>26</a>
+            
+            <!-- Desktop Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Itinerario</a></li>
+                <li><a href="turismo.html" class="active">Turismo</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="nav-dates">Apr 24 - 27</div>
+                <!-- Hamburger Menu Toggle -->
+                <button class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="mobile-nav-link">Plan de Viaje (Itinerario)</a></li>
+                <li><a href="turismo.html" class="mobile-nav-link active">Guía de Turismo</a></li>
+                <li class="separator"></li>
+                <li><a href="turismo.html#gratis" class="mobile-nav-link">Turismo Gratis</a></li>
+                <li><a href="turismo.html#pago" class="mobile-nav-link">Turismo Premium</a></li>
+                <li><a href="turismo.html#desayuno" class="mobile-nav-link">Desayunos</a></li>
+                <li><a href="turismo.html#comida" class="mobile-nav-link">Comidas & Cenas</a></li>
+                <li><a href="turismo.html#nightlife" class="mobile-nav-link">Nightlife & Clubs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h2 class="hero-subtitle">The Ultimate Trip</h2>
+            <h1 class="hero-title">NEW<br>YORK<span class="accent">.</span></h1>
+            <p class="hero-description">20 Lugares Imperdibles • Turismo y Gastronomía</p>
+            <a href="#gratis" class="btn-primary">Descubrir la Ruta <ion-icon name="arrow-down-outline"></ion-icon></a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section: Turismo Gratis -->
+        <section id="gratis" class="section-container">
+            <div class="section-header reveal">
+                <h3 class="section-label">01</h3>
+                <h2 class="section-title">Turismo <span class="gradient-text">Gratis</span></h2>
+                <p class="section-desc">Experiencias icónicas que no cuestan un centavo.</p>
+            </div>
+            <div class="grid layout-grid">
+                <!-- Card 1 -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1543781757-cd3ebf5012b1?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 7AM - 10PM</span>
+                        </div>
+                        <h4 class="card-title">The High Line & Hudson Yards</h4>
+                        <p class="card-text">Un parque elevado espectacular sobre una antigua vía de tren industrial,
+                            culminando en la asombrosa arquitectura de The Vessel.</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1576402187878-974f70c890a5?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 10AM - 8PM</span>
+                        </div>
+                        <h4 class="card-title">The Oculus (WTC)</h4>
+                        <p class="card-text">Joya arquitectónica de Santiago Calatrava. En su interior, un centro
+                            comercial futurista ideal para fotografías simétricas magistrales.</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1629734139933-7253457199ec?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 6AM - 11PM</span>
+                        </div>
+                        <h4 class="card-title">Little Island</h4>
+                        <p class="card-text">Un innovador parque flotante sobre pilotes de concreto en el río Hudson
+                            (Muelle 55). Arquitectura surrealista y vistas relajantes.</p>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1568668392383-58c369615742?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 10AM - 6PM</span>
+                        </div>
+                        <h4 class="card-title">Biblioteca de NYC & Bryant Park</h4>
+                        <p class="card-text">Admira la icónica <i>Rose Main Reading Room</i> y relájate en Bryant Park,
+                            el epicentro tech-friendly con Wi-Fi gratis bajo los árboles.</p>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1494475673543-6a6a27143fc8?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 6AM - 1AM</span>
+                        </div>
+                        <h4 class="card-title">Central Park</h4>
+                        <p class="card-text">Bethesda Terrace y Strawberry Fields. El contraste perfecto entre
+                            naturaleza y rascacielos. Piérdete en el pulmón de Manhattan.</p>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge time"><ion-icon name="partly-sunny-outline"></ion-icon> Amanecer</span>
+                        </div>
+                        <h4 class="card-title">Brooklyn Bridge & DUMBO</h4>
+                        <p class="card-text">Camina el puente al alba. Luego ve a DUMBO (Washington St) para la
+                            perspectiva cinematográfica del Manhattan Bridge.</p>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 10AM - 8PM</span>
+                        </div>
+                        <h4 class="card-title">Nintendo New York</h4>
+                        <p class="card-text">En el corazón de Rockefeller Center: dos pisos rebosantes de historia
+                            gaming, consolas retro y estaciones de juego.</p>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1594911771140-520e7df65e94?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 11AM - 7PM</span>
+                        </div>
+                        <h4 class="card-title">Flight Club (SoHo)</h4>
+                        <p class="card-text">Santuario sneakerhead. Modelos imposibles de encontrar, ediciones limitadas
+                            de Kobe, presentados en una vitrina tipo museo.</p>
+                    </div>
+                </article>
+
+                <!-- New Free Items (9-28) -->
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">24/7</span></div>
+                        <h4 class="card-title">Times Square</h4>
+                        <p class="card-text">El centro del mundo. Ve de noche para vivir la sobrecarga sensorial de las
+                            luces LED y la energía frenética de NYC.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1506362802163-2d13abc38b0f?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">6AM - 1AM</span></div>
+                        <h4 class="card-title">Washington Square Park</h4>
+                        <p class="card-text">Ubicado en Greenwich Village. Famoso por su arco de mármol, músicos
+                            callejeros y partidas de ajedrez intensas.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1533038590840-1cde6e668a91?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">24/7</span></div>
+                        <h4 class="card-title">Staten Island Ferry</h4>
+                        <p class="card-text">Cruza el puerto de NY gratis. Pasa justo al lado de la Estatua de la
+                            Libertad, ideal para fotos sin pagar el tour.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">5:30AM - 1:30AM</span></div>
+                        <h4 class="card-title">Grand Central Terminal</h4>
+                        <p class="card-text">La estación de tren más hermosa del mundo. Mira el techo del zodiaco y
+                            prueba la "galería de los susurros".</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1549484852-bc5d36e788bc?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">10AM - 5PM</span></div>
+                        <h4 class="card-title">Federal Hall</h4>
+                        <p class="card-text">En Wall Street. El lugar donde George Washington juró su cargo. Una pieza
+                            clave de historia frente al NYSE.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1555109307-f7d9da25c244?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">8:30AM - 5:30PM</span></div>
+                        <h4 class="card-title">Catedral de San Patricio</h4>
+                        <p class="card-text">Arquitectura neogótica impresionante rodeada por los rascacielos modernos
+                            de la Quinta Avenida.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1473163928189-39a0bc8a7c64?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">8AM - 11PM</span></div>
+                        <h4 class="card-title">Chelsea Market</h4>
+                        <p class="card-text">Antigua fábrica de galletas National Biscuit Company. Un mercado industrial
+                            con comida y diseño vibrante.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">24/7</span></div>
+                        <h4 class="card-title">The Bull (Wall Street)</h4>
+                        <p class="card-text">El Toro de carga es el símbolo del optimismo financiero. Asegúrate de
+                            tocarlo para tener buena suerte económica.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1533923156502-be315e027878?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">8AM - 7PM</span></div>
+                        <h4 class="card-title">Roosevelt Island Tramway</h4>
+                        <p class="card-text">Usa tu MetroCard (técnicamente no gratis, pero icónico) para sobrevolar el
+                            East River hasta Roosevelt Island.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1577979607234-a03fd28080c9?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge time">9AM - 8PM</span></div>
+                        <h4 class="card-title">Vessel at Hudson Yards</h4>
+                        <p class="card-text">La escultura de panal. Aunque el ascenso a veces está cerrado, la base y
+                            los alrededores son increíblemente visuales.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Section: Turismo Premium -->
+        <section id="pago" class="section-container">
+            <div class="section-header reveal">
+                <h3 class="section-label">02</h3>
+                <h2 class="section-title">Turismo <span class="gradient-text">Premium</span></h2>
+                <p class="section-desc">Experiencias exclusivas de pago que valen cada centavo.</p>
+            </div>
+            <div class="grid layout-grid">
+
+                <!-- Card 9 -->
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price"><ion-icon name="cash-outline"></ion-icon> ~$45</span>
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 9AM - 12AM</span>
+                        </div>
+                        <h4 class="card-title">SUMMIT One Vanderbilt</h4>
+                        <p class="card-text">Una alucinante experiencia inmersiva llena de espejos e ilusiones ópticas
+                            que redefine las vistas aéreas de Nueva York.</p>
+                    </div>
+                </article>
+
+                <!-- Card 10 -->
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1440751147138-04283896c4d6?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price"><ion-icon name="cash-outline"></ion-icon> ~$36</span>
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 10AM - 5PM</span>
+                        </div>
+                        <h4 class="card-title">Intrepid Museum</h4>
+                        <p class="card-text">Sube a bordo de un portaaviones real en el muelle del Hudson, hogar del
+                            legendario transbordador espacial Enterprise.</p>
+                    </div>
+                </article>
+
+                <!-- Card 11 -->
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1549484852-bc5d36e788bc?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price"><ion-icon name="cash-outline"></ion-icon> $30</span>
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 10:30AM - 5:30PM</span>
+                        </div>
+                        <h4 class="card-title">MoMA</h4>
+                        <p class="card-text">El Museo de Arte Moderno te espera con algunas de las obras más importantes
+                            del mundo, incluyendo 'La Noche Estrellada' de Van Gogh.</p>
+                    </div>
+                </article>
+
+                <!-- Card 12 -->
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1544067332-9599557b7a69?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price"><ion-icon name="cash-outline"></ion-icon> $28</span>
+                            <span class="badge time"><ion-icon name="time-outline"></ion-icon> 10:30AM - 9PM</span>
+                        </div>
+                        <h4 class="card-title">Fotografiska NYC</h4>
+                        <p class="card-text">Museo sueco de fotografía contemporánea, ubicado en un impresionante
+                            edificio histórico de la Edad Dorada.</p>
+                    </div>
+                </article>
+
+                <!-- New Paid Items (13-32) -->
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1581373449483-37446f146522?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$44+</span><span
+                                class="badge time">9AM-10PM</span></div>
+                        <h4 class="card-title">Empire State Building</h4>
+                        <p class="card-text">El observatorio más famoso. Siente la historia del Art Deco mientras miras
+                            el Empire State desde su piso 86.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1527214660375-7f311c1d09e5?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$40+</span><span
+                                class="badge time">Varios</span></div>
+                        <h4 class="card-title">Broadway Show</h4>
+                        <p class="card-text">No has visto NYC si no has visto un musical en Broadway. Desde 'The Lion
+                            King' hasta 'Hamilton'.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1550895030-823330fc2551?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$30</span><span
+                                class="badge time">10AM-5PM</span></div>
+                        <h4 class="card-title">The MET Museum</h4>
+                        <p class="card-text">Metropolitan Museum of Art. 5000 años de historia, desde templos egipcios
+                            hasta armaduras medievales.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1582236940822-777c6ca93fca?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$36</span><span
+                                class="badge time">9AM-12AM</span></div>
+                        <h4 class="card-title">Top of the Rock</h4>
+                        <p class="card-text">Rockefeller Center. La mejor vista del Empire State y Central Park desde
+                            una terraza abierta.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1502484393684-0a8a654922e9?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$30+</span><span
+                                class="badge time">10AM-9PM</span></div>
+                        <h4 class="card-title">Edge Observation Deck</h4>
+                        <p class="card-text">La plataforma aérea más alta del hemisferio occidental con suelo de cristal
+                            en Hudson Yards.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1534430480872-3498386e7a56?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$28</span><span
+                                class="badge time">10AM-5PM</span></div>
+                        <h4 class="card-title">9/11 Memorial & Museum</h4>
+                        <p class="card-text">Una experiencia conmovedora sobre la historia del World Trade Center y los
+                            eventos del 11 de septiembre.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1523309531122-1d5d1433604f?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$25</span><span
+                                class="badge time">10AM-5PM</span></div>
+                        <h4 class="card-title">American Museum of Natural History</h4>
+                        <p class="card-text">Dinosaurios, ballenas azules y la historia del universo. Popularizado por
+                            'Noche en el Museo'.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1614949581781-a95786ed8504?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$45+</span><span
+                                class="badge time">9AM-9PM</span></div>
+                        <h4 class="card-title">One World Observatory</h4>
+                        <p class="card-text">Situado en el Freedom Tower. Un ascensor que te muestra la evolución de NY
+                            en 47 segundos.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$25</span><span
+                                class="badge time">11AM-6PM</span></div>
+                        <h4 class="card-title">Whitney Museum</h4>
+                        <p class="card-text">Arte estadounidense moderno en un edificio espectacular diseñado por Renzo
+                            Piano junto al High Line.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card premium-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$35</span><span
+                                class="badge time">Variado</span></div>
+                        <h4 class="card-title">Jazz en Blue Note</h4>
+                        <p class="card-text">Vive la verdadera noche de Greenwich Village en uno de los clubes de jazz
+                            más famosos del mundo.</p>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+
+        <!-- Section: Desayuno -->
+        <section id="desayuno" class="section-container dark-alt">
+            <div class="section-header reveal">
+                <h3 class="section-label">03</h3>
+                <h2 class="section-title">Comienza el <span class="gradient-text">Día</span></h2>
+                <p class="section-desc">Energía y sabor para recorrer las calles de Manhattan.</p>
+            </div>
+            <div class="grid layout-grid triple-grid">
+
+                <!-- Card 13 -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1585478440536-47b2c502dafb?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price">$10 - $18</span>
+                            <span class="badge time">6AM - 5PM</span>
+                        </div>
+                        <h4 class="card-title">Liberty Bagels (Midtown)</h4>
+                        <p class="card-text">Famosos en el mundo entero por sus increíbles y fotogénicos bagels de
+                            arcoíris y rellenos superabundantes.</p>
+                        <div class="menu-highlight">
+                            <strong>Menú:</strong> Bagel con Cream Cheese, Lox (salmón), Sándwiches de huevo.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 14 -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price">$20 - $30</span>
+                            <span class="badge time">9AM - 4PM</span>
+                        </div>
+                        <h4 class="card-title">Clinton St. Baking Co.</h4>
+                        <p class="card-text">Una leyenda local del Lower East Side. Están considerados de forma unánime
+                            como los mejores pancakes de toda la ciudad.</p>
+                        <div class="menu-highlight">
+                            <strong>Menú:</strong> Pancakes de arándanos, Huevos benedictinos.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 15 -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price">$5 - $12</span>
+                            <span class="badge time">8AM - 7PM</span>
+                        </div>
+                        <h4 class="card-title">Devoción Coffee</h4>
+                        <p class="card-text">El oasis de Brooklyn. Café colombiano de origen tostado en un entorno
+                            natural y estéticamente inmejorable.</p>
+                        <div class="menu-highlight">
+                            <strong>Menú:</strong> Café de especialidad artesanal, Croissants.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- New Breakfast Items (16-35) -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$15-25</span><span
+                                class="badge time">8AM-4PM</span></div>
+                        <h4 class="card-title">Buvette</h4>
+                        <p class="card-text">Gastrothèque francesa en West Village. Huevos al vapor y tostadas de
+                            aguacate de ensueño.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$10-20</span><span
+                                class="badge time">7AM-6PM</span></div>
+                        <h4 class="card-title">Dominique Ansel Bakery</h4>
+                        <p class="card-text">Hogar del Cronut. Ve temprano si quieres probar el híbrido de croissant y
+                            donut más famoso.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$12-18</span><span
+                                class="badge time">24/7</span></div>
+                        <h4 class="card-title">Veselka</h4>
+                        <p class="card-text">Institución ucraniana en East Village. Pierogis y Sopa de Remolacha para un
+                            desayuno potente.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$15-30</span><span
+                                class="badge time">9AM-3PM</span></div>
+                        <h4 class="card-title">Jacob's Pickles</h4>
+                        <p class="card-text">Upper West Side. Galletas de biscuit gigantes rellenas de pollo frito y
+                            miel. Un "must" total.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$14-22</span><span
+                                class="badge time">8AM-5PM</span></div>
+                        <h4 class="card-title">Russ & Daughters</h4>
+                        <p class="card-text">Leyenda judía del Lower East Side. El mejor lox y arenques sobre bagels
+                            artesanales.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$18-25</span><span
+                                class="badge time">10AM-4PM</span></div>
+                        <h4 class="card-title">The Smith</h4>
+                        <p class="card-text">Brunch americano clásico con múltiples locales. Huevos al horno y mac &
+                            cheese de desayuno.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$10-15</span><span
+                                class="badge time">7AM-7PM</span></div>
+                        <h4 class="card-title">Abraco</h4>
+                        <p class="card-text">El mejor espresso y cake de oliva de East Village en un ambiente bohemio.
+                        </p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$5-10</span><span
+                                class="badge time">6AM-2PM</span></div>
+                        <h4 class="card-title">Absolute Bagels</h4>
+                        <p class="card-text">Para muchos, los mejores bagels de Manhattan. Estilo tradicional,
+                            crujientes por fuera y aireados.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$15-20</span><span
+                                class="badge time">8AM-4PM</span></div>
+                        <h4 class="card-title">Egg Shop</h4>
+                        <p class="card-text">Especialistas en el huevo. Sándwiches creativos en boles o pan artesanal en
+                            SoHo.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1510629954389-c1e0da47d4ec?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$8-14</span><span
+                                class="badge time">7AM-5PM</span></div>
+                        <h4 class="card-title">Maman</h4>
+                        <p class="card-text">Inspiración francesa. Famosos por su tarta de lavanda y galletas de
+                            chocolate con sal marina.</p>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+
+        <!-- Section: Almuerzo y Cena -->
+        <section id="comida" class="section-container">
+            <div class="section-header reveal">
+                <h3 class="section-label">04</h3>
+                <h2 class="section-title">Almuerzos & <span class="gradient-text">Cenas</span></h2>
+                <p class="section-desc">Porque en Nueva York, nunca se come mal.</p>
+            </div>
+            <div class="grid layout-grid">
+
+                <!-- Card 16 -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price">$20 - $30</span>
+                            <span class="badge time">11AM - 11PM</span>
+                        </div>
+                        <h4 class="card-title">Ichiran Ramen (Times Sq)</h4>
+                        <p class="card-text">El sueño de todo dev. Comes el mejor ramen en una cabina individual para
+                            enfocarte en el sabor con 0% de ruido social.</p>
+                        <div class="menu-highlight">
+                            <strong>Menú:</strong> Tonkotsu Ramen hiper-personalizable.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 17 -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price">$5 / taco</span>
+                            <span class="badge time">11AM - 10PM</span>
+                        </div>
+                        <h4 class="card-title">Los Tacos No. 1 (Chelsea)</h4>
+                        <p class="card-text">Sin pretensiones, rápido y considerado el mejor taco callejero de la ciudad
+                            dentro del imponente Chelsea Market.</p>
+                        <div class="menu-highlight">
+                            <strong>Menú:</strong> Adobada (Pastor), Carne Asada, Pollo.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 18 -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price">$10 - $15</span>
+                            <span class="badge time">11AM - 12AM</span>
+                        </div>
+                        <h4 class="card-title">7th Street Burger</h4>
+                        <p class="card-text">La perfección hecha smash burger. Un menú hiper reducido porque dominan lo
+                            que hacen. Sencillez y brutal calidad.</p>
+                        <div class="menu-highlight">
+                            <strong>Menú:</strong> Cheeseburger clásica, Double Cheese, Fries.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 19 -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price">$4 - $5</span>
+                            <span class="badge time">10AM - 4AM</span>
+                        </div>
+                        <h4 class="card-title">Joe’s Pizza (Greenwich)</h4>
+                        <p class="card-text">La rebanada de vida nocturna en Manhattan. Clásica, delgada, aceitosa y
+                            legendaria (Sale en Spider-Man 2).</p>
+                        <div class="menu-highlight">
+                            <strong>Menú:</strong> Queso, Pepperoni, Fresh Mozzarella.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 20 -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1517042571253-ab0e9a099a5e?auto=format&fit=crop&w=1200&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge price">$30</span>
+                            <span class="badge time">8AM - 11PM</span>
+                        </div>
+                        <h4 class="card-title">Katz's Delicatessen</h4>
+                        <p class="card-text">Un lugar histórico e institución culinaria global de NYC. Raciones gigantes
+                            que valen la pena probar una vez en la vida.</p>
+                        <div class="menu-highlight">
+                            <strong>Menú:</strong> Pastrami on Rye (centeno), Matzah Ball Soup.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- New Dinner Items (21-40) -->
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$30-60</span><span
+                                class="badge time">5PM-11PM</span></div>
+                        <h4 class="card-title">Carbone</h4>
+                        <p class="card-text">Red Sauce Italian en su máxima expresión. Tienes que intentar conseguir una
+                            mesa para probar su Spicy Rigatoni.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$25-45</span><span
+                                class="badge time">12PM-10PM</span></div>
+                        <h4 class="card-title">L&B Spumoni Gardens</h4>
+                        <p class="card-text">Brooklyn. La pizza siciliana (cuadrada) que define a toda una comunidad.
+                            Imprescindible.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$15-25</span><span
+                                class="badge time">11AM-12AM</span></div>
+                        <h4 class="card-title">Xi'an Famous Foods</h4>
+                        <p class="card-text">Fideos chinos picantes tirados a mano. Comida rápida pero legendaria y
+                            llena de sabor.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$40-100</span><span
+                                class="badge time">5PM-1AM</span></div>
+                        <h4 class="card-title">Balthazar</h4>
+                        <p class="card-text">Brasserie francesa en SoHo. Steak frites y una atmósfera que te hace sentir
+                            como una estrella de cine.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1544333323-5d73ac41e53b?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$35-70</span><span
+                                class="badge time">12PM-11PM</span></div>
+                        <h4 class="card-title">PETER LUGER</h4>
+                        <p class="card-text">El steakhouse más antiguo y venerado de Brooklyn. Solo aceptan efectivo o
+                            su propia tarjeta de crédito.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1541014741259-df549fa9ba67?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$20-35</span><span
+                                class="badge time">11:30AM-10PM</span></div>
+                        <h4 class="card-title">Ippudo Ramen</h4>
+                        <p class="card-text">Otro gigante del ramen. Caldos cremosos y bollos de cerdo (pork buns) que
+                            rozan la perfección.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$25-50</span><span
+                                class="badge time">11AM-11PM</span></div>
+                        <h4 class="card-title">Mamoun's Falafel</h4>
+                        <p class="card-text">El falafel más antiguo de la ciudad en MacDougal Street. Barato, rápido y
+                            auténtico.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$30-60</span><span
+                                class="badge time">5PM-12AM</span></div>
+                        <h4 class="card-title">Buddakan</h4>
+                        <p class="card-text">Comida asiática de fusión en un local masivo y lujoso en Meatpacking
+                            District. Escenario de muchas películas.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1502301103665-0b95cc738def?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$15-30</span><span
+                                class="badge time">11AM-11PM</span></div>
+                        <h4 class="card-title">The Halal Guys</h4>
+                        <p class="card-text">El carrito de comida callejera original. Pollo sobre arroz con su famosa
+                            salsa blanca (ten cuidado con la roja).</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$30-50</span><span
+                                class="badge time">12PM-10PM</span></div>
+                        <h4 class="card-title">John's of Bleecker St.</h4>
+                        <p class="card-text">Solo pizzas enteras, horno de carbón, sin reservas. La pizza auténtica de
+                            la vieja escuela de NYC.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$40-120</span><span
+                                class="badge time">5:30PM-11PM</span></div>
+                        <h4 class="card-title">Beauty & Essex</h4>
+                        <p class="card-text">Entras por una casa de empeño y descubres un restaurante de lujo. Comida
+                            compartida sofisticada en el Lower East Side.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$12-20</span><span
+                                class="badge time">11:30AM-10PM</span></div>
+                        <h4 class="card-title">Vanessa's Dumplings</h4>
+                        <p class="card-text">Dumplings baratos y deliciosos en Chinatown. Una joya para comer bien por
+                            poco dinero.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1555992336-fb0d29498b13?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$25-50</span><span
+                                class="badge time">10AM-10PM</span></div>
+                        <h4 class="card-title">Melt Shop</h4>
+                        <p class="card-text">Sándwiches de queso a la parrilla llevados al siguiente nivel. Confort food
+                            americana pura.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$15-30</span><span
+                                class="badge time">11AM-10PM</span></div>
+                        <h4 class="card-title">Num Pang Kitchen</h4>
+                        <p class="card-text">Sándwiches camboyanos tipo Bahn Mi con un toque moderno de NY. Explosión de
+                            sabores umami.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1541830826426-36940822941b?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$40-80</span><span
+                                class="badge time">5PM-12AM</span></div>
+                        <h4 class="card-title">The Spotted Pig</h4>
+                        <p class="card-text">El primer gastropub de NY. Su hamburguesa con queso Roquefort y patatas
+                            fritas shoestring es mítica.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card food-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1533777419517-3e4017e2e15a?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge price">$10-18</span><span
+                                class="badge time">11AM-2AM</span></div>
+                        <h4 class="card-title">Artichoke Basille's Pizza</h4>
+                        <p class="card-text">Famosa por su pizza de alcachofa cremosa. Solo para hambrientos de verdad
+                            después de una noche de fiesta.</p>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+
+        <!-- Section: Nightlife & Clubs -->
+        <section id="nightlife" class="section-container dark-alt">
+            <div class="section-header reveal">
+                <h3 class="section-label">05</h3>
+                <h2 class="section-title">Nightlife & <span class="gradient-text">Clubs</span></h2>
+                <p class="section-desc">Donde la ciudad que nunca duerme cobra vida. El Top 20 de la noche neoyorquina.
+                </p>
+            </div>
+            <div class="grid layout-grid">
+
+                <!-- Card 1 -->
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Brooklyn</span><span class="badge time">10PM
+                                - 6AM</span></div>
+                        <h4 class="card-title">Brooklyn Mirage / Avant Gardner</h4>
+                        <p class="card-text">Un santuario al aire libre de escala masiva. Visuales de 360 grados y los
+                            mejores DJs de techno y house del mundo.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Meatpacking</span><span
+                                class="badge time">11PM - 4AM</span></div>
+                        <h4 class="card-title">Marquee New York</h4>
+                        <p class="card-text">Clásico de lujo con sistemas de sonido Funktion-One y una pista de baile
+                            que define el estándar del clubbing de alto nivel.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Chelsea</span><span class="badge time">11PM -
+                                4AM</span></div>
+                        <h4 class="card-title">Lavo Nightclub</h4>
+                        <p class="card-text">Combinación de restaurante italiano y club nocturno underground de alta
+                            energía. Muy exclusivo y vibrante.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1514525253361-bee8a187499d?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Meatpacking</span><span
+                                class="badge time">11PM - 4AM</span></div>
+                        <h4 class="card-title">TAO Downtown Nightclub</h4>
+                        <p class="card-text">Escondido debajo del famoso restaurante, es una joya oscura y misteriosa
+                            con una estética asiática espectacular.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1429962714451-bb934ecbb4ec?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Bushwick</span><span class="badge time">24/7
+                                (Fines)</span></div>
+                        <h4 class="card-title">House of Yes</h4>
+                        <p class="card-text">Mucho más que un club: circo, cabaret y una cultura de libertad absoluta.
+                            El lugar más creativo de Brooklyn.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1574391884720-bbc37bb019e2?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">SoHo</span><span class="badge time">5PM -
+                                2AM</span></div>
+                        <h4 class="card-title">The Jimmy at ModernHaus</h4>
+                        <p class="card-text">Rooftop sofisticado con piscina y vistas de 360 grados. Perfecto para
+                            cócteles con el skyline a tus pies.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1516997121675-4c2d04fe1301?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Gramercy</span><span class="badge time">10PM
+                                - 4AM</span></div>
+                        <h4 class="card-title">Webster Hall</h4>
+                        <p class="card-text">Histórico local dedicado a conciertos y noches de club épicas. Tres niveles
+                            de pura energía musical.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1571266028243-e4733b0f0bb1?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Williamsburg</span><span
+                                class="badge time">10PM - 5AM</span></div>
+                        <h4 class="card-title">Output / Schimanski</h4>
+                        <p class="card-text">Continuando el legado del techno puro en Brooklyn. Sonido industrial, crudo
+                            y diseñado para amantes de la música.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1481653125770-b78c206c59d4?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Flatiron</span><span class="badge time">11PM
+                                - 4AM</span></div>
+                        <h4 class="card-title">Somewhere Nowhere</h4>
+                        <p class="card-text">Inspirado en un jardín secreto, este lounge y club en las alturas cuenta
+                            con la piscina de rooftop más alta de NYC.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1550731215-6804a95db0f4?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Chelsea</span><span class="badge time">10PM -
+                                4AM</span></div>
+                        <h4 class="card-title">Nebula</h4>
+                        <p class="card-text">Un club futurista que desafía la gravedad con paneles de pantalla movibles
+                            y una programación de DJs de élite.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Meatpacking</span><span
+                                class="badge time">11PM - 4AM</span></div>
+                        <h4 class="card-title">The Box</h4>
+                        <p class="card-text">El club más enigmático y picante de la ciudad. Teatro de variedades
+                            "shock-value" solo para mentes abiertas.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Midtown</span><span class="badge time">4PM -
+                                12AM</span></div>
+                        <h4 class="card-title">230 Fifth Rooftop</h4>
+                        <p class="card-text">El bar de azotea más grande de la ciudad con iglús en invierno. La foto
+                            perfecta frente al Empire State.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1541334643033-d8db86470377?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Lower East Side</span><span
+                                class="badge time">10PM - 4AM</span></div>
+                        <h4 class="card-title">Public Arts</h4>
+                        <p class="card-text">Diseñado por el pionero de Studio 54, Ian Schrager. Vanguardista,
+                            sofisticado y siempre a la moda.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1510672392090-fb43a9ed2751?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Tribeca</span><span class="badge time">5PM -
+                                2AM</span></div>
+                        <h4 class="card-title">Kind Regards</h4>
+                        <p class="card-text">Bar de cócteles arriba, club desenfrenado abajo. Una joya escondida con
+                            ambiente local selecto.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Chelsea</span><span class="badge time">11PM -
+                                4AM</span></div>
+                        <h4 class="card-title">1 OAK</h4>
+                        <p class="card-text">One Of A Kind. El destino favorito de las celebridades mundiales para la
+                            noche neoyorquina.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1545634149-16630852865d?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Brooklyn</span><span class="badge time">10PM
+                                - 5AM</span></div>
+                        <h4 class="card-title">Nowadays</h4>
+                        <p class="card-text">Vibe relajado, jardín exterior inmenso y un equipo de sonido de primer
+                            nivel para melómanos del vinilo.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Lower East Side</span><span
+                                class="badge time">11PM - 4AM</span></div>
+                        <h4 class="card-title">Hotel Chantelle</h4>
+                        <p class="card-text">Tres niveles de fiesta: lounge parisino, club energético y un rooftop
+                            retráctil impresionante.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Meatpacking</span><span
+                                class="badge time">11PM - 4AM</span></div>
+                        <h4 class="card-title">The Highlight Room</h4>
+                        <p class="card-text">Inspirado en los jardines ingleses, este club en las alturas ofrece vistas
+                            épicas y gente guapa.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Greenpoint</span><span
+                                class="badge time">10PM - 6AM</span></div>
+                        <h4 class="card-title">Good Room</h4>
+                        <p class="card-text">Construido por y para entusiastas de la música electrónica. Aquí el baile y
+                            el respeto son la ley.</p>
+                    </div>
+                </article>
+                <article class="card reveal-card night-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges"><span class="badge night">Lower East Side</span><span
+                                class="badge time">11PM - 4AM</span></div>
+                        <h4 class="card-title">Pianos</h4>
+                        <p class="card-text">Dos niveles de locura indie y pop. Una institución del Lower East Side para
+                            noches de sudor y baile desenfrenado.</p>
+                    </div>
+                </article>
+
+            </div>
+            <!-- Special Section: Hispanic Clubs -->
+            <div class="sub-section reveal">
+                <h3 class="sub-section-title">Clubs <span class="gradient-text">Hispanohablantes</span></h3>
+                <p class="section-desc">Donde el ritmo latino y la energía hispana dominan la noche.</p>
+            </div>
+
+            <div class="grid layout-grid">
+                <!-- Hispanic Club 1 -->
+                <article class="card reveal-card night-card hispanic-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1571401835393-8c5f35328320?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge night">Queens</span>
+                            <span class="badge time">10PM - 4AM</span>
+                        </div>
+                        <h4 class="card-title">La Boom NYC</h4>
+                        <p class="card-text"><strong>(Club/Discoteca Hispanohablante)</strong> La discoteca latina más grande de Queens. Conciertos de artistas top y la mejor mezcla de reggaetón y bachata.</p>
+                    </div>
+                </article>
+
+                <!-- Hispanic Club 2 -->
+                <article class="card reveal-card night-card hispanic-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1543165365-07232ed12abad?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge night">Bronx</span>
+                            <span class="badge time">11AM - 2AM</span>
+                        </div>
+                        <h4 class="card-title">Salsa con Fuego</h4>
+                        <p class="card-text"><strong>(Club/Discoteca Hispanohablante)</strong> Elegancia y sabor en el Bronx. Ideal para cenar y luego bailar salsa en un ambiente sofisticado.</p>
+                    </div>
+                </article>
+
+                <!-- Hispanic Club 3 -->
+                <article class="card reveal-card night-card hispanic-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge night">NoHo (Manhattan)</span>
+                            <span class="badge time">5PM - 2AM</span>
+                        </div>
+                        <h4 class="card-title">Gonzalez y Gonzalez</h4>
+                        <p class="card-text"><strong>(Club/Discoteca Hispanohablante)</strong> Un rincón de salsa auténtica en el corazón de Manhattan. Música en vivo que te hará bailar toda la noche.</p>
+                    </div>
+                </article>
+
+                <!-- Hispanic Club 4 -->
+                <article class="card reveal-card night-card hispanic-card">
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badges">
+                            <span class="badge night">Williamsburg</span>
+                            <span class="badge time">8PM - 4AM</span>
+                        </div>
+                        <h4 class="card-title">Bembé</h4>
+                        <p class="card-text"><strong>(Club/Discoteca Hispanohablante)</strong> Fusión de ritmos caribeños y latinos. Un ambiente íntimo y eléctrico donde el sudor y el ritmo son protagonistas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <h2 class="logo">NYC<span class="accent">.</span>26</h2>
+            <p>El itinerario definitivo para conquistar la Gran Manzana.<br>24 - 27 de Abril.</p>
+            <div class="credits">
+                Desarrollado con una estética premium para una experiencia inolvidable.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

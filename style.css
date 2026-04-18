@@ -6,16 +6,17 @@
     --bg-alt: #07070b;
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
-    --accent: #f5b927; /* Taxi Gold / Amber */
+    --accent: #f5b927;
+    /* Taxi Gold / Amber */
     --accent-dark: #d99c15;
     --accent-glow: rgba(245, 185, 39, 0.3);
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-hover: rgba(255, 255, 255, 0.06);
     --glass-border: rgba(255, 255, 255, 0.06);
-    
+
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
-    
+
     --anim-speed: 0.4s;
     --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -40,10 +41,18 @@ body {
     overflow-x: hidden;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* ==================================
    TYPOGRAPHY & UTILS
 ================================== */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.2;
@@ -111,53 +120,10 @@ a {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-.nav-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 1.2rem 2rem;
+.nav-right {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-}
-
-.nav-links a {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--text-muted);
-    transition: color 0.3s ease;
-    position: relative;
-}
-
-.nav-links a:hover {
-    color: var(--text-main);
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: var(--accent);
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
+    gap: 1.5rem;
 }
 
 .nav-dates {
@@ -168,6 +134,85 @@ a {
     border: 1px solid var(--glass-border);
     border-radius: 50px;
     background: var(--glass-bg);
+}
+
+/* Hamburger Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    padding: 0;
+}
+
+.menu-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-main);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background: rgba(13, 13, 18, 0.95);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    z-index: 1050;
+    padding: 100px 2rem 2rem;
+    transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid var(--glass-border);
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mobile-nav-link {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.mobile-nav-link.active {
+    color: var(--accent);
+}
+
+.mobile-links .separator {
+    height: 1px;
+    background: var(--glass-border);
+    margin: 0.5rem 0;
+}
+
+/* Hamburger active state */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 /* ==================================
@@ -191,7 +236,8 @@ a {
     height: 100%;
     background-size: cover;
     background-position: center;
-    transform: scale(1.05); /* slightly scaled for parallax effect in JS */
+    transform: scale(1.05);
+    /* slightly scaled for parallax effect in JS */
     z-index: 1;
 }
 
@@ -201,12 +247,10 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(3, 3, 5, 0.4) 0%,
-        rgba(3, 3, 5, 0.8) 60%,
-        var(--bg-color) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(3, 3, 5, 0.4) 0%,
+            rgba(3, 3, 5, 0.8) 60%,
+            var(--bg-color) 100%);
     z-index: 2;
 }
 
@@ -285,12 +329,22 @@ a {
 }
 
 @keyframes scroll {
-    0% { transform: translate(-50%, 0); opacity: 1; }
-    100% { transform: translate(-50%, 15px); opacity: 0; }
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 15px);
+        opacity: 0;
+    }
 }
 
 @keyframes fadeUp {
-    to { opacity: 1; transform: translateY(0); }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ==================================
@@ -309,7 +363,10 @@ a {
 .dark-alt::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; width: 100vw; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
     background: var(--bg-alt);
     z-index: -1;
     left: 50%;
@@ -380,7 +437,8 @@ a {
 }
 
 .card:hover .card-img {
-    transform: scale(1.05); /* Slight scale on hover */
+    transform: scale(1.05);
+    /* Slight scale on hover */
 }
 
 /* To mask the overflow of the scaled image */
@@ -395,7 +453,7 @@ a {
     flex-direction: column;
     position: relative;
     z-index: 2;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(3,3,5,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(3, 3, 5, 0.8) 100%);
 }
 
 .card-badges {
@@ -448,9 +506,216 @@ a {
     color: var(--accent);
 }
 
-/* Premium Card specific tweak */
-.premium-card {
-    border-top: 2px solid rgba(245, 185, 39, 0.3);
+/* ==================================
+   ITINERARY TIMELINE
+================================== */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent) 0%, #7d2bbd 50%, #4c4353 100%);
+    opacity: 0.3;
+}
+
+.timeline-day {
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.day-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 5px;
+}
+
+.day-dot {
+    width: 32px;
+    height: 32px;
+    background: var(--accent);
+    border: 6px solid var(--bg-color);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--accent-glow);
+    z-index: 2;
+}
+
+.day-title {
+    font-size: 1.8rem;
+    color: var(--text-main);
+}
+
+.day-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 0.2rem;
+}
+
+.timeline-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 45px;
+}
+
+.timeline-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    contain: paint;
+}
+
+.timeline-item:hover {
+    background: var(--glass-hover);
+    transform: translateX(10px);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.timeline-item .time-tag {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 70px;
+    text-transform: uppercase;
+}
+
+.timeline-item .item-icon {
+    font-size: 1.8rem;
+    color: var(--text-main);
+    opacity: 0.8;
+}
+
+.timeline-item .item-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.timeline-item .item-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Highlighted Item Styles */
+.timeline-item.highlight {
+    border-left: 4px solid var(--accent);
+}
+
+.timeline-item.special-highlight {
+    border-left: 4px solid #ff4d4d; /* Birthday color */
+}
+
+.timeline-item.flight-card {
+    border-left: 4px solid #50e1f9; /* Flight color */
+}
+
+.badge.opt {
+    display: block;
+    margin-top: 0.8rem;
+    background: rgba(245, 185, 39, 0.1);
+    color: var(--accent);
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* Notes Section */
+.itinerary-notes {
+    max-width: 900px;
+    margin: 4rem auto;
+}
+
+.note-card {
+    background: rgba(125, 43, 189, 0.05);
+    border: 1px solid rgba(125, 43, 189, 0.2);
+    border-radius: 24px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.note-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #e0b6ff;
+}
+
+.note-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.note-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.note-card ul li strong {
+    color: var(--text-main);
+}
+
+.note-card ul li ion-icon {
+    color: #e0b6ff;
+    font-size: 1.2rem;
+}
+
+/* Responsive Overrides */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .day-header {
+        margin-left: 0;
+    }
+    
+    .timeline-items {
+        margin-left: 35px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+    
+    .timeline-item .time-tag {
+        min-width: auto;
+    }
 }
 
 .sub-section {
@@ -465,7 +730,8 @@ a {
 }
 
 .hispanic-card {
-    border-top: 2px solid #ff4d4d; /* Passion Red accent */
+    border-top: 2px solid #ff4d4d;
+    /* Passion Red accent */
 }
 
 .hispanic-card .badge.night {
@@ -497,36 +763,53 @@ footer {
 /* ==================================
    REVEAL ANIMATIONS (Intersection Observer)
 ================================== */
-.reveal, .reveal-card {
+.reveal,
+.reveal-card {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.reveal.active, .reveal-card.active {
+.reveal.active,
+.reveal-card.active {
     opacity: 1;
     transform: translateY(0);
 }
 
 /* Stagger card reveals */
-.grid .reveal-card:nth-child(1) { transition-delay: 0.1s; }
-.grid .reveal-card:nth-child(2) { transition-delay: 0.2s; }
-.grid .reveal-card:nth-child(3) { transition-delay: 0.3s; }
-.grid .reveal-card:nth-child(4) { transition-delay: 0.4s; }
-.grid .reveal-card:nth-child(n+5) { transition-delay: 0.1s; }
+.grid .reveal-card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.grid .reveal-card:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.grid .reveal-card:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.grid .reveal-card:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.grid .reveal-card:nth-child(n+5) {
+    transition-delay: 0.1s;
+}
 
 /* ==================================
    RESPONSIVE DESIGN
 ================================== */
 @media (max-width: 900px) {
     .nav-links {
-        display: none; /* simple mobile nav approach for now */
+        display: none;
+        /* simple mobile nav approach for now */
     }
-    
+
     .hero-title {
         font-size: clamp(3rem, 12vw, 5rem);
     }
-    
+
     .section-title {
         font-size: 2.5rem;
     }
