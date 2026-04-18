@@ -38,6 +38,64 @@ document.addEventListener('DOMContentLoaded', () => {
         heroBg.style.transform = `scale(1.05) translateY(${scrollValue * 0.3}px)`;
     });
 
+    /**
+     * Carousel Controller
+     * Handles image switching and dot updates for all destination cards
+     */
+    class CarouselController {
+        constructor() {
+            this.init();
+        }
+
+        init() {
+            // Event Delegation for dots and arrows
+            document.addEventListener('click', (e) => {
+                const dot = e.target.closest('.dot');
+                const arrow = e.target.closest('.carousel-arrow');
+
+                if (dot) {
+                    const index = parseInt(dot.dataset.index);
+                    this.scrollToImage(dot.closest('.card'), index);
+                }
+
+                if (arrow) {
+                    const card = arrow.closest('.card');
+                    const direction = arrow.classList.contains('next') ? 1 : -1;
+                    this.navigate(card, direction);
+                }
+            });
+        }
+
+        scrollToImage(card, index) {
+            const track = card.querySelector('.carousel-track');
+            const dots = card.querySelectorAll('.dot');
+            
+            // Update Track
+            track.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update Dots
+            dots.forEach((d, i) => {
+                d.classList.toggle('active', i === index);
+            });
+            
+            // Store current index
+            card.dataset.currentIndex = index;
+        }
+
+        navigate(card, direction) {
+            let currentIndex = parseInt(card.dataset.currentIndex || 0);
+            const images = card.querySelectorAll('.carousel-image');
+            const maxIndex = images.length - 1;
+
+            currentIndex += direction;
+
+            if (currentIndex < 0) currentIndex = maxIndex;
+            if (currentIndex > maxIndex) currentIndex = 0;
+
+            this.scrollToImage(card, currentIndex);
+        }
+    }
+
     // 3. Intersection Observer for Scroll Reveals
     const revealElements = document.querySelectorAll('.reveal, .reveal-card');
     
@@ -82,11 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Card Hover Micro-interactions (Optional/Additional)
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            // Subtle sound effect or other feedback could go here
-        });
-    });
+    // 5. Initialize Carousel
+    new CarouselController();
 });
