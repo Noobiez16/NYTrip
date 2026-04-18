@@ -515,6 +515,19 @@ a {
 /* ==================================
    ITINERARY TIMELINE
 ================================== */
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container.main-nav-right {
+    justify-content: flex-end;
+}
+
 .timeline {
     position: relative;
     max-width: 900px;
