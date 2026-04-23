@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         init() {
-            // Event Delegation for dots and arrows
+            // Event Delegation for clicks (dots and arrows)
             document.addEventListener('click', (e) => {
                 const dot = e.target.closest('.dot');
                 const arrow = e.target.closest('.carousel-arrow');
@@ -64,6 +64,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     this.navigate(card, direction);
                 }
             });
+
+            // Touch support for swiping
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            document.addEventListener('touchstart', (e) => {
+                const container = e.target.closest('.card-image-container');
+                if (!container) return;
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            document.addEventListener('touchend', (e) => {
+                const container = e.target.closest('.card-image-container');
+                if (!container) return;
+                
+                touchEndX = e.changedTouches[0].screenX;
+                this.handleSwipe(container.closest('.card'), touchStartX, touchEndX);
+            }, { passive: true });
+        }
+
+        handleSwipe(card, startX, endX) {
+            const threshold = 50; // minimum distance for a swipe
+            const diff = startX - endX;
+
+            if (Math.abs(diff) > threshold) {
+                if (diff > 0) {
+                    // Swipe left -> Next
+                    this.navigate(card, 1);
+                } else {
+                    // Swipe right -> Prev
+                    this.navigate(card, -1);
+                }
+            }
         }
 
         scrollToImage(card, index) {
@@ -71,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const dots = card.querySelectorAll('.dot');
             
             // Update Track
-            track.style.transform = `translateX(-${index * 100}%)`;
+            track.style.transform = `translate3d(-${index * 100}%, 0, 0)`;
             
             // Update Dots
             dots.forEach((d, i) => {

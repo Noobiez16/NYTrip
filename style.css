@@ -424,15 +424,11 @@ a {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all var(--anim-speed) var(--ease);
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    transition: var(--transition-base);
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
+    will-change: transform;
 }
 
 /* --- Destination Cards & Carousel --- */
@@ -451,13 +447,18 @@ a {
     width: 100%;
     height: 100%;
     transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    will-change: transform;
 }
 
 .carousel-image {
+    width: 100%;
     min-width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
     height: 100%;
     object-fit: cover;
     user-select: none;
+    -webkit-user-drag: none;
 }
 
 /* Carousel Overlay Controls */
@@ -557,7 +558,7 @@ a {
 
 /* To mask the overflow of the scaled image */
 .card {
-    contain: paint;
+    overflow: hidden;
 }
 
 .card-content {
@@ -706,8 +707,8 @@ a {
     align-items: center;
     gap: 1.5rem;
     backdrop-filter: blur(10px);
+    overflow: hidden;
     transition: all 0.3s ease;
-    contain: paint;
 }
 
 .timeline-item:hover {
